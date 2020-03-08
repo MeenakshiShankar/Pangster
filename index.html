@@ -105,6 +105,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  font-size: 20px;
 }
 
 .sidepanel a {
@@ -134,10 +135,17 @@
   color: white;
   padding: 10px 15px;
   border: none;
+  
 }
 
 .openbtn2:hover {
   background-color:#444;
+}
+
+.home{
+    
+    height: 100vh;
+    width: 100vh;;
 }
     </style>
 
@@ -146,6 +154,7 @@
     <body>
 
         <section id="home">
+            <div style="background-image: url('GoodandDelish.png');">
             <div id="mySidepanel" class="sidepanel">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="#">About</a>
@@ -154,9 +163,8 @@
                 <a href="#">Contact</a>
               </div>
               
-              <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>  
-              <h2>Collapsed Sidepanel</h2>
-              <p>Click on the hamburger menu/bar icon to open the sidepanel.</p>
+              <button class="openbtn" onclick="openNav()">☰</button>  
+              
               
               <script>
               function openNav() {
@@ -179,7 +187,7 @@
               </div>
               
               
-              <button class="openBtn" onclick="openSearch()">Find Your Street</button>
+              <button class="openBtn2s" onclick="openSearch()">Find Your Street</button>
               
               <script>
               function openSearch() {
@@ -190,7 +198,7 @@
                 document.getElementById("myOverlay").style.display = "none";
               }
               </script>
-                   
+              </div>     
         </section>
 
     </body>
